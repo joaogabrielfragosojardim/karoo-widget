@@ -30,22 +30,22 @@
         // event.data contains the message sent
         if (event.origin == "https://widget.karoo.com.br" || event.origin == "http://localhost:3000" || event.origin == "https://widget-karoo-qa.alterdatasoftware.com.br") {
             if (!event.data.open) {
-                iframe_element.style.width = "58px"
-                iframe_element.style.height = "56px"
-                iframe_element.style.bottom = "15px"
-                iframe_element.style.right = "15px"
+                iframe_element.setAttribute("width", "58px")
+                iframe_element.setAttribute("height", "56px")
+                iframe_element.setAttribute("bottom", "15px")
+                iframe_element.setAttribute("right", "15px")
             } else {
                 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                    iframe_element.style.width = "100vw"
-                    iframe_element.style.height = "100vh"
-                    iframe_element.style.bottom = "0"
-                    iframe_element.style.right = "0"
-                    iframe_element.style.borderRadius = "0px"
+                    iframe_element.setAttribute("width", "100vw")
+                    iframe_element.setAttribute("height", "100vh")
+                    iframe_element.setAttribute("bottom", "0")
+                    iframe_element.setAttribute("right", "0")
+                    iframe_element.setAttribute("borderRadius", "0px")
 
                 } else {
-                    iframe_element.style.width = "450px"
-                    iframe_element.style.height = screenHeight > 768 ? "80%" : "90%"
-                    iframe_element.style.maxHeight = "600px"
+                    iframe_element.width = "450px"
+                    iframe_element.height = screenHeight > 768 ? "80%" : "90%"
+                    iframe_element.maxHeight = "600px"
                 }
             }
         } else {
