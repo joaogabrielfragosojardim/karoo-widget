@@ -10,14 +10,13 @@
 
     div_complete.appendChild(div_iframe);
     var div_frame = document.getElementById("div-frame");
-    div_frame.setAttribute("style", "display: block; position: fixed; right: 15px; bottom: 15px; z-index: 99; width: 400px; height: 600px; background: red")
 
     var iframe_element = document.createElement('iframe');
     iframe_element.setAttribute("id", "iframe-temp");
     iframe_element.setAttribute("frameBorder", "0");
     iframe_element.setAttribute("allowTransparency", "false");
     iframe_element.setAttribute("scrolling", "no");
-    iframe_element.setAttribute("style", "border-radius: 8px; display: block; position: fixed; right: 15px; bottom: 15px;")
+    iframe_element.setAttribute("style", "display: block; position: fixed; right: 15px; bottom: 15px; width: 400px; height: 600px; z-index: 99; border-radius: 8px; background-color: red")
 
     var host_name = _kwp.host + "?account=" + _kwp.conta + (_kwp.color ? ("&color=" + _kwp.color) : '')
     iframe_element.setAttribute("src", host_name)
