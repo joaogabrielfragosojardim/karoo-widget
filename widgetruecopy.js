@@ -1,6 +1,8 @@
 (function () {
     var div_completo = document.createElement('div');
     div_completo.setAttribute("id", "div-completo");
+    div_completo.setAttribute("style", "display: block; width: 400px; height: 600px; pointer-events: none")
+
     document.documentElement.appendChild(div_completo);
 
     var div_complete = document.getElementById("div-completo");
@@ -16,7 +18,7 @@
     iframe_element.setAttribute("frameBorder", "0");
     iframe_element.setAttribute("allowTransparency", "false");
     iframe_element.setAttribute("scrolling", "no");
-    iframe_element.setAttribute("style", "display: block; position: fixed; right: 15px; bottom: 15px; width: 400px; height: 600px; z-index: 99; border-radius: 8px; pointer-events: none")
+    iframe_element.setAttribute("style", "display: block; position: fixed; right: 15px; bottom: 15px; width: 400px; height: 600px; z-index: 99; border-radius: 8px")
 
     var host_name = _kwp.host + "?account=" + _kwp.conta + (_kwp.color ? ("&color=" + _kwp.color) : '')
     iframe_element.setAttribute("src", host_name)
