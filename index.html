@@ -16,9 +16,14 @@
       (function (d, t) {
         var k = d.createElement(t),
           s = d.getElementsByTagName(t)[0];
-        k.src = "/widgetrue.js";
+        k.src = "/widgetruecopy.js";
         s.parentNode.insertBefore(k, s);
       })(document, "script");
+
+      function teste(){
+        console.log(0);
+      }
     </script>
+    <div style="position: absolute; bottom: 42px; right: 32px;"><button onclick="teste()">aa</button></div>
   </body>
 </html>

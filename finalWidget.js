@@ -1,7 +1,7 @@
 (function () {
     var div_completo = document.createElement('div');
     div_completo.setAttribute("id", "div-completo");
-    div_completo.setAttribute("style", "display: block; width: 400px; height: 600px; pointer-events: none")
+    div_completo.setAttribute("style", "display: block; width: 400px; height: 600px; z-index: -99;")
 
     document.documentElement.appendChild(div_completo);
 
