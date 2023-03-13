@@ -16,7 +16,7 @@
     iframe_element.setAttribute("frameBorder", "0");
     iframe_element.setAttribute("allowTransparency", "false");
     iframe_element.setAttribute("scrolling", "no");
-    iframe_element.setAttribute("style", "display: block; position: fixed; right: 15px; bottom: 15px; width: 400px; height: 600px; z-index: 99; border-radius: 8px; background-color: red")
+    iframe_element.setAttribute("style", "display: block; position: fixed; right: 15px; bottom: 15px; width: 400px; height: 600px; z-index: 99; border-radius: 8px; pointer-events: none")
 
     var host_name = _kwp.host + "?account=" + _kwp.conta + (_kwp.color ? ("&color=" + _kwp.color) : '')
     iframe_element.setAttribute("src", host_name)
